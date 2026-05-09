@@ -1,4 +1,9 @@
 {
+  "name": "harsh-plugins",
+  "owner": {
+    "name": "Harsh Verma",
+    "url": "https://github.com/redblackcoder"
+  },
   "plugins": [
     {
       "name": "wiki-skills",
