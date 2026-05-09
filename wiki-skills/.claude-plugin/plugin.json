@@ -1,0 +1,7 @@
+{
+  "name": "wiki-skills",
+  "description": "LLM Wiki management — bootstrap topics, extract knowledge from raw content, synthesize wiki pages",
+  "version": "1.0.0",
+  "author": { "name": "Harsh Verma" },
+  "repository": "https://github.com/redblackcoder/claude-plugins"
+}

@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    {
+      "name": "wiki-skills",
+      "description": "LLM Wiki management — bootstrap topics, extract knowledge from raw content, synthesize wiki pages",
+      "version": "1.0.0",
+      "source": {
+        "type": "github",
+        "repo": "redblackcoder/claude-plugins",
+        "path": "wiki-skills"
+      }
+    }
+  ]
+}
