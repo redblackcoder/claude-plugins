@@ -1,5 +1,6 @@
 {
   "name": "harsh-plugins",
+  "description": "Personal Claude Code plugins for knowledge management and learning workflows",
   "owner": {
     "name": "Harsh Verma",
     "url": "https://github.com/redblackcoder"
@@ -9,11 +10,7 @@
       "name": "wiki-skills",
       "description": "LLM Wiki management — bootstrap topics, extract knowledge from raw content, synthesize wiki pages",
       "version": "1.0.0",
-      "source": {
-        "type": "github",
-        "repo": "redblackcoder/claude-plugins",
-        "path": "wiki-skills"
-      }
+      "source": "./wiki-skills"
     }
   ]
 }
