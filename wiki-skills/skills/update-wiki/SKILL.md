@@ -157,6 +157,13 @@ Append a row:
 - **Content spans multiple categories**: Put the page where it PRIMARILY belongs, cross-link from others.
 - **Page is getting too long** (>200 lines): Propose splitting into sub-pages with a hub page linking them.
 
+## Updating wiki/README.md
+
+After creating/updating wiki pages, update `wiki/README.md`:
+- Update the "Categories" section to reflect current wiki categories and page counts
+- Update Stats: "Wiki pages" count, "Sources processed" count, "Last updated" date
+- If new wiki categories were created, add them to the listing
+
 ## Batch mode
 
 If user says "ingest all pending sources" or similar:

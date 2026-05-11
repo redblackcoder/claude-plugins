@@ -192,6 +192,60 @@ Links raw files to their source extracts and wiki pages.
 | (none yet) | | | |
 ```
 
+### raw/README.md
+
+```markdown
+# [Topic Name] — Raw Materials
+
+[User's one-line description]
+
+Source materials for learning. Processed into wiki pages via `/extract` → `/update-wiki`.
+
+## Contents
+
+### papers/
+[Description based on template — e.g., "PDFs of research papers, textbooks, course slides"]
+
+### code/
+[Description based on template — e.g., "Solved problems, implementations, exercises"]
+
+### docs/
+[Description based on template — e.g., "Saved articles, design docs, notes"]
+
+## Stats
+
+- Total files: 0
+- Last updated: [date]
+```
+
+### wiki/README.md
+
+```markdown
+# [Topic Name] — Wiki
+
+[User's one-line description]
+
+Synthesized knowledge pages maintained by LLM. Also an Obsidian vault.
+
+## Categories
+
+[List wiki categories from template with brief descriptions. Initially empty — filled as pages are created.]
+
+## How this works
+
+1. Raw materials go into the sibling `raw/` repo
+2. `/extract` produces source extracts in `sources/`
+3. `/update-wiki` synthesizes extracts into wiki pages in `wiki/`
+
+## Stats
+
+- Wiki pages: 0
+- Sources processed: 0
+- Last updated: [date]
+```
+
+**Keeping READMEs up to date:** Both READMEs should be refreshed when content is added. The `/extract` skill updates `raw/README.md` stats after processing new materials. The `/update-wiki` skill updates `wiki/README.md` categories and stats after creating pages.
+
 ### .obsidian/ setup
 
 Create minimal Obsidian vault config so it opens cleanly:
@@ -214,10 +268,11 @@ Create minimal Obsidian vault config so it opens cleanly:
 ## Execution
 
 After creating everything:
-1. Initialize git in raw/: `git init`, create .gitignore (ignore .DS_Store), initial commit
-2. Initialize git in wiki/: `git init`, create .gitignore (ignore .DS_Store, .obsidian/workspace.json), initial commit
-3. Print summary of what was created
-4. Remind user to:
+1. Write raw/README.md and wiki/README.md (using templates above, populated with topic details)
+2. Initialize git in raw/: `git init`, create .gitignore (ignore .DS_Store), initial commit (includes README.md)
+3. Initialize git in wiki/: `git init`, create .gitignore (ignore .DS_Store, .obsidian/workspace.json), initial commit (includes README.md)
+4. Print summary of what was created
+5. Remind user to:
    - Open wiki/ folder in Obsidian as a vault
    - Set up GitHub remotes when ready (`git remote add origin [url]`)
    - Use `/extract` to start processing raw content

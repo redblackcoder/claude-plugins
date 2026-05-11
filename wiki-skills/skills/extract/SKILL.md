@@ -123,6 +123,12 @@ After saving the extract, add a row to the appropriate section of `wiki/refs/raw
 
 Construct the git web URL from the base URL in CLAUDE.md + the relative path.
 
+## Updating raw/README.md
+
+After saving the extract, update `raw/README.md`:
+- Increment "Total files" count in Stats
+- Update "Last updated" date
+
 ## Edge Cases
 
 - **User doesn't have a raw file** (just wants to process something they read online): Save the content to raw/docs/ first, then extract from it. Or if ephemeral, save extract with `source: external` and `source_url: [original URL]`.
