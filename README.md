@@ -12,7 +12,7 @@ Personal Claude Code plugin marketplace.
 
 ### wiki-skills
 
-LLM Wiki management — bootstrap topics, extract knowledge from raw content, synthesize wiki pages.
+LLM Wiki management — maintain single-repo study wikis with local sources.
 
 ```
 /plugin install wiki-skills
@@ -20,5 +20,5 @@ LLM Wiki management — bootstrap topics, extract knowledge from raw content, sy
 
 **Skills included:**
 - `/wiki-skills:bootstrap-wiki` — Create a new LLM Wiki topic with full scaffolding
-- `/wiki-skills:extract` — Iteratively produce source extracts from raw content
-- `/wiki-skills:update-wiki` — Synthesize source extracts into wiki pages
+- `/wiki-skills:extract` — Explore a source and optionally save a cited reading note
+- `/wiki-skills:update-wiki` — Update problems, concepts and catalogs directly from evidence

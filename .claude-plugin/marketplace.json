@@ -8,8 +8,8 @@
   "plugins": [
     {
       "name": "wiki-skills",
-      "description": "LLM Wiki management — bootstrap topics, extract knowledge from raw content, synthesize wiki pages",
-      "version": "1.0.0",
+      "description": "Maintain a single-repo learning wiki with source-backed problems, concepts and reading notes",
+      "version": "2.0.0",
       "source": "./wiki-skills"
     }
   ]
